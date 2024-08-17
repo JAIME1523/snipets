@@ -1,0 +1,179 @@
+{
+	// Place your snippets for dart here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"A new Flutter Page with a Scaffold": {
+		"prefix": "fl-Page",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"",
+			"class ${1:Home}Page extends StatelessWidget {",
+			"   ",
+			"  const ${1:Home}Page({Key? key}) : super(key: key);",
+			"  ",
+			"  @override",
+			"  Widget build(BuildContext context) {",
+			"    return const Scaffold(",
+			"      body: Center(",
+			"         child: Text('${1:Home}Page'),",
+			"      ),",
+			"    );",
+			"  }",
+			"}"
+		],
+		"description": "Crea una pantalla con un Scaffold"
+	},
+	"A new Flutter Screen with a Scaffold": {
+		"prefix": "fl-screen",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"",
+			"class ${1:Home}Screen extends StatelessWidget {",
+			"   ",
+			"  const ${1:Home}Screen({Key? key}) : super(key: key);",
+			"  ",
+			"  @override",
+			"  Widget build(BuildContext context) {",
+			"    return const Scaffold(",
+			"      body: Center(",
+			"         child: Text('${1:Home}Screen'),",
+			"      ),",
+			"    );",
+			"  }",
+			"}"
+		],
+		"description": "Crea una pantalla con un Scaffold"
+	},
+	"Rectangle for flutter": {
+		"prefix": "fl-rectangulo",
+		"body": [
+			"     Container(",
+			"      width: 70,",
+			"      height: 70,",
+			"      decoration: const BoxDecoration(",
+			"        color: Colors.blue",
+			"      ));",
+		],
+		"description": "Rectangle"
+	},
+	"SizedBox for flutter": {
+		"prefix": "fl-sizedBox",
+		"body": [
+			"const SizedBox(height: ${1:20}),",
+		],
+		"description": "Rectangle"
+	},
+	"A new Flutter View ": {
+		"prefix": "fl-view",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"",
+			"class ${1:Home}View extends StatelessWidget {",
+			"   ",
+			"  const ${1:Home}View({Key? key}) : super(key: key);",
+			"  ",
+			"  @override",
+			"  Widget build(BuildContext context) {",
+			"    return Container();",
+			"  }",
+			"}"
+		],
+		"description": "Crea una pantalla con un Scaffold"
+	},
+	"A new get and set ": {
+		"prefix": "fl-get_set",
+		"body": [
+			"bool _${1:isLoading} = true;",
+			"bool get ${1:isLoading} => _${1:isLoading};",
+			"set ${1:isLoading}(bool value) {",
+			"_${1:isLoading} = value;",
+			"notifyListeners();",
+			"}"
+		],
+		"description": "Crea una pantalla con un Scaffold"
+	},
+	"A new Privder ": {
+		"prefix": "fl-provider",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"",
+			"class ${1:Home}Provider extends ChangeNotifier {",
+			"}"
+		],
+		"description": "Crea una pantalla con un provider"
+	},
+
+	"Color scheme":{"prefix": "theme-of-context",
+		"body": "final colors = Theme.of(context).colorScheme;",
+		"description": "Create the reference to the colors"
+		},
+	"style scheme":{"prefix": "fl-style-context",
+
+		"body": "final styleText = Theme.of(context).textTheme;",
+		"description": "Create the reference to the textTheme"
+	},
+
+	"Media-sizeOf":{"prefix": "fl-mediaQuey",
+
+		"body": "final size = MediaQuery.sizeOf(context);",
+		"description": "Create the reference to the MediaQuery"
+	},
+
+	"A new Model ": {
+	"prefix": "fl-model",
+	"body": [
+		"class ${1:Model} {",
+			"final String ${2:info};",
+			"${1:Model}({required this.${2:info}});",
+		 " }"
+	],
+	"description": "Crea una plantilla de modelo"
+	},
+
+	"A new enum ": {
+		"prefix": "fl-enum",
+		"body": [
+			 "enum ${1:NameEnum} {",
+				"name('name');",
+				"final ${2:String} value;",
+				"const NameEnum(this.value);",
+			"  }"
+		],
+		"description": "Crea un enum que regresa un valor"
+		},
+	"Layut reponsibe": {
+		"prefix": "fl-Layout",
+		"body": [
+			"LayoutBuilder(builder: (_, viewportConstraints) {",
+				"return SingleChildScrollView(",
+				  "child: ConstrainedBox(",
+					"constraints: BoxConstraints(",
+					 " minHeight: viewportConstraints.maxHeight,",
+					"),",
+					"child: const Column(",
+					 " mainAxisAlignment: MainAxisAlignment.spaceBetween,",
+					"  mainAxisSize: MainAxisSize.min,",
+					"  children: [],",
+					"),",
+				"  ),",
+				");",
+			 " }",
+			 ")",
+		],
+		"description": "Crea el cuerpo para un listado de wigets responsivo de un solo cuadro"
+	}
+	
+
+	
+	  
+}
